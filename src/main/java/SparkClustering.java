@@ -22,7 +22,7 @@ public class SparkClustering {
                 .getOrCreate();
 
         // Источник данных: файл
-        DataSource fileDataSource = new FileDataSource("C:\\Users\\Elena Shustova\\Desktop\\FOLDER\\SGTU\\DIPLOM\\iris.csv", spark);
+        DataSource fileDataSource = new FileDataSource("C:\\Users\\Elena\\Desktop\\FOLDER\\.csv", spark);
         Dataset<Row> fileData = fileDataSource.getData();
         MetaInf fileMetaInf = fileDataSource.getMetaInf();
 
